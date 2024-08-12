@@ -58,7 +58,7 @@ g++ *.cpp -Wall -Wextra -std=c++17 -O3 -o XXX.out
 ```arg2``` (int): the number of segment divisions per unit length $n$  
 ```arg3``` (double): migrational variance, $\sigma^2$  
 ```arg4``` (double): selection coefficient in environment 1, $s_1$  
-```arg5``` (double): selection coefficient in environment 2, $s_2$  
+```arg5``` (double): selection coefficient in environment 2 (with inversed sign), $s_2$  
 ```arg6``` (double): radius of the target patch, $R$  
 ```arg7``` (double): radius of the source patch, $R_s$  
 ```arg8``` (int): accessory number (no effect on simulation behavior)  
@@ -88,7 +88,7 @@ Codes for numerical calculations. First, you need to calculate the establishment
 1. Set parameters in the top part of main function.
 ```sigma_sq```: migrational variance $\sigma^2$  
 ```s1```: selection coefficient in environment 1, $s_1$  
-```s2```: selection coefficient in environment 2, $s_2$  
+```s2```: selection coefficient in environment 2 (with inversed sign), $s_2$  
 ```r1```: the radius of the target patch in $d=1$ case  
 ```r2```: the radius of the target patch in $d=2$ case  
 ```r3```: the radius of the target patch in $d=3$ case  
@@ -118,7 +118,7 @@ Each file contains results for corresponding spatial dimension.
 1. This program uses outputs from "calculate_est.cpp", so please make sure that "calculate_est.cpp" was run with correct parameters before running this code.  
 2. Set parameters in the top part of main function.  
 ```sigma_sq```: migrational variance $\sigma^2$  
-```s2```: selection coefficient in environment 2, $s_2$  
+```s2```: selection coefficient in environment 2 (with inversed sign), $s_2$  
 ```r```: radius of the target patch  
 ```rs```: radius of the source patch  
 ```rho```: population density, $\rho$  
@@ -150,7 +150,7 @@ Final file: "lambda.txt"
 1. Set parameters in the top part of main function.
 ```sigma_sq```: migrational variance $\sigma^2$  
 ```s1```: selection coefficient in environment 1, $s_1$  
-```s2```: selection coefficient in environment 2, $s_2$  
+```s2```: selection coefficient in environment 2 (with inversed sign), $s_2$  
 ```r```: radius of the target patch  
 ```rs```: radius of the source patch  
 ```rho```: population density, $\rho$  
